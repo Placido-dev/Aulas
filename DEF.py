@@ -1,4 +1,4 @@
-# def imprimir(a, b, c) <- parametros: 
+# def imprimir(a, b, c): <- parametros
 #     print(a, b, c) 
 
 
