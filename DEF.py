@@ -27,12 +27,11 @@ separacao()
 aula(2)    
 separacao()    
 
-def soma(x, y):
-    print(x + y)
-    # print(x * y)
+def soma(x, y, z):
+    print(f'{x=} {y=} {z=}', '|', 'x + y + z = ', x + y + z)
 
-soma(1, 2)    
-soma(1, 56)
+soma(1, 2, 3)
+soma(1, y=2, z=5) #  <- a partir de um argumento nomeado, os próximos deverão ser nomeaods
 
 separacao()
 aula(3)
