@@ -36,3 +36,17 @@ soma(1, y=2, z=5) #  <- a partir de um argumento nomeado, os próximos deverão 
 separacao()
 aula(3)
 separacao()
+
+def soma2(x, y, z=None):
+    if z is not None:
+        print(f'{x=} {y=} {z=}', '|', 'x + y + z = ', x + y + z)
+    else:
+        print(f'{x=} {y=}', '|', 'x + y = ', x + y)
+
+soma2(1, 2)        
+soma2(3, 7, 5)        
+soma2(3, 7, 0)        
+
+separacao()
+aula(4)
+separacao()
