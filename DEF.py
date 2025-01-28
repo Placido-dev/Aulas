@@ -82,7 +82,53 @@ def aula(numero_aula=0):
 # result2 = soma_teste(2, 2)
 # print(result1 + result2)
 
+# separacao()
+# aula(6)
+# separacao()
+
+# x, y, *resto = 1, 2, 3, 4
+# print(x, y, resto)
+
+# def soma(*args):
+#     total = 0
+#     for numero in args:
+#         total += numero
+#     return total
+
+# soma_1_2_3 = soma(1, 2, 3)        
+# print(soma_1_2_3)
+
+# soma_4_5_6 = soma(4, 5, 6)        
+# print(soma_1_2_3)
+
+# numeros = 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+# outra_soma = soma(*numeros)        
+# print(outra_soma)
+
+# print(sum((1, 2, 3, 4, 5, 6, 7, 8, 9, 10)))
+# print(*numeros)
+
 separacao()
-aula(6)
+aula(7)
 separacao()
 
+def multiplicar_arg(*args):
+    total = args
+    for numero in args:
+        total = numero
+        return total
+    
+
+mult = multiplicar_arg(1 * 2 * 3 * 4 * 5)
+print(mult)
+
+def par_impar(x):
+    if x % 2 == 0:
+        return 'par'
+    else:
+        return 'ímpar'
+    
+numero = par_impar(33)
+numero2 = par_impar(34)
+print(numero)
+print(numero2)
