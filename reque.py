@@ -8,11 +8,15 @@ def get_pokemon(name):
     print(response)
 
     if response.status_code == 200:
-        pokemon_name = response.json()
-        return pokemon_name
+        pokemon_data = response.json()
+        return pokemon_data
     else:
         print('Falha em obter a', response.status_code)
 
-pokemon_name = 'Dragonite'
+pokemon_name = 'dragonite'
 pokemon_info = get_pokemon(pokemon_name)
-print(pokemon_info)
+
+if pokemon_info:
+    print(f'{pokemon_info["name"]}')
+    print(f'{pokemon_info["id"]}')
+    print(f'{pokemon_info["location_area_encounters"]}')

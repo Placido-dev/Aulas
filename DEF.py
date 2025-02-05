@@ -112,23 +112,28 @@ separacao()
 aula(7)
 separacao()
 
-def multiplicar_arg(*args):
-    total = args
-    for numero in args:
-        total = numero
-        return total
+# def multiplicar_arg(*args):
+#     total = args
+#     for numero in args:
+#         total = numero
+#         return total
     
 
-mult = multiplicar_arg(1 * 2 * 3 * 4 * 5)
-print(mult)
+# mult = multiplicar_arg(1 * 2 * 3 * 4 * 5)
+# print(mult)
 
-def par_impar(x):
-    if x % 2 == 0:
-        return 'par'
-    else:
-        return 'ímpar'
+# def par_impar(x):
+#     if x % 2 == 0:
+#         return 'par'
+#     else:
+#         return 'ímpar'
     
-numero = par_impar(33)
-numero2 = par_impar(34)
-print(numero)
-print(numero2)
+# numero = par_impar(33)
+# numero2 = par_impar(34)
+# print(numero)
+# print(numero2)
+
+separacao()
+aula(8)
+separacao()
+
