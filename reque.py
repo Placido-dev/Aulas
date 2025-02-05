@@ -19,4 +19,8 @@ pokemon_info = get_pokemon(pokemon_name)
 if pokemon_info:
     print(f'{pokemon_info["name"]}')
     print(f'{pokemon_info["id"]}')
+    print('Habilidades:')
+    for ability in pokemon_info['abilities']:
+        print(f' - {ability["ability"]["name"]}')
+    print(f'{pokemon_info["weight"]}')
     print(f'{pokemon_info["location_area_encounters"]}')
