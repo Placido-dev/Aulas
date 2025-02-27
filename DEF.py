@@ -133,9 +133,9 @@ def aula(numero_aula=0):
 # print(numero)
 # print(numero2)
 
-separacao()
-aula(8)
-separacao()
+# separacao()
+# aula(8)
+# separacao()
 
 # Dicionários em Python (tipo dict)
 # Dicionários são estruturas de dados do tipo
@@ -149,28 +149,34 @@ separacao()
 # dicionários.
 # Imutáveis: str, int, float, bool, tuple
 # Mutável: dict, list
+
 # pessoa = {
-#     'nome': 'Luiz Otávio',
-#     'sobrenome': 'Miranda',
-#     'idade': 18,
-#     'altura': 1.8,
-#     'endereços': [
-#         {'rua': 'tal tal', 'número': 123},
-#         {'rua': 'outra rua', 'número': 321},
+#     'nome': 'Guilherme Silva',
+#     'sobrenome': 'Plácido',
+#     'endereco': [
+#         {'rua': 'Antonio Seixas', 'numero': 77, 'complemento': 'A'}
 #     ]
 # }
-# pessoa = dict(nome='Luiz Otávio', sobrenome='Miranda')
 
-pessoa = {
-    'nome': 'Guilherme Silva',
-    'sobrenome': 'Plácido',
-    'endereco': [
-        {'rua': 'Antonio', 'numero': 77}
-    ]
-}
+# print(pessoa['nome'])
+# print(pessoa['sobrenome'])
 
+# for chave in pessoa['endereco']:
+#     print({chave["rua"]})
+
+separacao()
+aula(9)
+separacao()
+
+pessoa = {}
+
+chave = 'nome'
+pessoa[chave] = 'Segredo'
+pessoa['sobrenome'] = 'Segredo2'
+
+print(pessoa[chave])
+pessoa[chave] = 'Gui'
+
+del pessoa['sobrenome']
+print(pessoa)
 print(pessoa['nome'])
-print(pessoa['sobrenome'])
-
-for chave in pessoa['endereco']:
-    print({chave["rua"]})
